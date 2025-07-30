@@ -1,3 +1,9 @@
+body, #root {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +45,139 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.game-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: #181818;
+}
+
+.powerups-sidebar {
+  width: 280px;
+  background: #232323;
+  color: #ff9800;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 2px solid #333;
+  min-width: 220px;
+}
+
+.powerups-sidebar h2 {
+  font-size: 1.6em;
+  margin-bottom: 1em;
+  color: #ff9800;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.powerups-sidebar .upgrade-btn {
+  width: 100%;
+  margin-bottom: 0.7em;
+  font-size: 1em;
+  padding: 0.7em 0.5em;
+}
+
+.powerups-sidebar > div {
+  margin-bottom: 1em;
+  color: #ffb74d;
+  font-size: 1em;
+}
+
+.clicker-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-width: 0;
+}
+
+.clicker-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  background: #181818;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #0008;
+  border: 1px solid #333;
+}
+
+h1 {
+  color: #ff9800;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.score {
+  font-size: 2.2em;
+  margin-bottom: 1.2em;
+  color: #f5f5f5;
+  font-weight: 600;
+  background: #232323;
+  border-radius: 10px;
+  padding: 0.5em 0;
+  box-shadow: 0 2px 8px #0004;
+}
+
+.click-btn {
+  font-size: 1.5em;
+  padding: 1em 2em;
+  margin-bottom: 1.2em;
+  background: linear-gradient(90deg, #ff9800 60%, #ffb74d 100%);
+  color: #181818;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 2px 8px #ff980044;
+  transition: background 0.2s, transform 0.1s;
+}
+.click-btn:hover {
+  background: linear-gradient(90deg, #ffb74d 60%, #ff9800 100%);
+  transform: scale(1.05);
+}
+
+.upgrade-section {
+  margin-top: 2em;
+}
+
+.upgrade-btn {
+  font-size: 1.1em;
+  padding: 0.7em 2em;
+  background: linear-gradient(90deg, #424242 60%, #ff9800 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 8px #ff980044;
+  margin-bottom: 0.7em;
+  transition: background 0.2s, transform 0.1s;
+}
+.upgrade-btn:hover:enabled {
+  background: linear-gradient(90deg, #ff9800 60%, #424242 100%);
+  transform: scale(1.05);
+}
+.upgrade-btn:disabled {
+  background: #757575;
+  color: #bbb;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.upgrade-section > div {
+  color: #ff9800;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-top: 0.5em;
 }
